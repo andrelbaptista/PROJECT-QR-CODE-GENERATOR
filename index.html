@@ -1,18 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QR code Generator</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- google robot font type -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="img/QR-sample.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/styles.css" />
     <script src="js/scripts.js" defer></script>
-</head>
-<body>
-    <main id="main-container">
-        <section id="input-form">
-
-        </section>
+  </head>
+  <body>
+    <main>
+      <section id="input-form">
+        <!-- input field ans submit -->
+        <h2>QR Code Generator</h2>
+        <form id="form">
+          <label for="">Enter an URL or text to generate a QR Code</label>
+          <input
+            type="text"
+            name="text"
+            id="text"
+            placeholder="Write an URL or text...."
+          />
+          <input id="click" type="submit" value="Press to generate" />
+        </form>
+        <!-- QR Code generation -->
+        <picture id="qr-result">
+          <!-- just to format the CSS -->
+          <!-- <img id="qr-code"  class="active"  src="img/QR-sample.png" alt="QR code" /> -->
+        </picture>
+      </section>
     </main>
-    
-</body>
+  </body>
 </html>
